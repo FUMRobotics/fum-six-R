@@ -3,7 +3,13 @@
 
 
 #include "Model/Controller/controller.h"
-#include "Model/Controller/beckhoff.h";
+#include "Model/Controller/beckhoff.h"
+#include <iomanip>
+#include <iostream>
+#include <ctime>
+#include <sstream>
+#include <chrono>
+#include <fstream>
 
 #include <QObject>
 
