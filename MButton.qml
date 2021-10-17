@@ -42,7 +42,7 @@ Item {
             implicitWidth: _width
             implicitHeight: _height
             opacity: enabled ? 1 : 0.3
-            //border.color: control.down ? "#046380" : "#EFECCA"
+            border.color: control.down ? "#046380" : "#EFECCA"
             //border.color: control.down ? "#A7A37E" : "#EFECCA"
             //color: _isActive ? "#C5E1A5" : "white"
             color: _isActive ? "#E6E2AF" : "#046380"

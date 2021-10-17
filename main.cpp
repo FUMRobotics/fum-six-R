@@ -7,13 +7,14 @@
 #include <QtQuick/qquickitem.h>
 #include <qqmlcontext.h>
 #include <qqml.h>
+#include <QtQuick>
 
 #include <Model/ViewModel/mainviewmodel.h>
 #include <Model/ViewModel/jogviewmodel.h>
 #include <Model/ViewModel/positionviewmodel.h>
 #include <Model/ViewModel/rightviewmodel.h>
 #include <Model/ViewModel/iohandlingviewmodel.h>
-#include <Model/ViewModel/scopeviewmodel.h>
+//#include <Model/ViewModel/scopeviewmodel.h>
 #include <Model/ViewModel/iomonitoringviewmodel.h>
 #include <Model/ViewModel/teachpointviewmodel.h>
 #include <Model/Controller/controller.h>
@@ -22,8 +23,8 @@
 #include <Model/ViewModel/servoparametersviewmodel.h>
 #include <Model/ViewModel/velocityaccelerationviewmodel.h>
 #include <Model/ViewModel/breakviewmodel.h>
-#include <Model/ViewModel/customplotitem.h>
-#include <Model/ViewModel/qcustomplot.h>
+//#include <Model/ViewModel/customplotitem.h>
+//#include <Model/ViewModel/qcustomplot.h>
 #include <QtQml>
 #include <QtCharts>
 #include <qqmlcontext.h>
@@ -74,21 +75,20 @@ int main(int argc, char *argv[])
     qmlRegisterType<iomonitoringviewmodel>("IOMonitoringViewModel",1,0,"IOMonitoringViewModel");
     qmlRegisterType<teachpointviewmodel>("TeachPointViewModel",1,0,"TeachPointViewModel");
     qmlRegisterType<scoordinatesviewmodel>("ScoordinatesViewModel",1,0,"ScoordinatesViewModel");
-    qmlRegisterType<scopeviewmodel>("ScopeViewModel",1,0,"ScopeViewModel");
+    //qmlRegisterType<scopeviewmodel>("ScopeViewModel",1,0,"ScopeViewModel");
     qmlRegisterType<BottomViewModel>("BottomViewModel",1,0,"BottomViewModel");
     qmlRegisterType<VelocityAccelerationViewModel>("VelocityAccelerationViewModel",1,0,"VelocityAccelerationViewModel");
     qmlRegisterType<ServoPRMViewModel>("ServoPRMViewModel",1,0,"ServoPRMViewModel");
     qmlRegisterType<breakviewmodel>("BreakViewModel",1,0,"BreakViewModel");
-    qmlRegisterType<CustomPlotItem>("CustomPlot", 1, 0, "CustomPlotItem");
-    qmlRegisterType<QCustomPlot>("QCustomPlot", 1, 0, "QCustomPlot");
+    //qmlRegisterType<CustomPlotItem>("CustomPlot", 1, 0, "CustomPlotItem");
+    //qmlRegisterType<QCustomPlot>("QCustomPlot", 1, 0, "QCustomPlot");
     //*******************************
     teachpointviewmodel techpoint;
 
     QObject *topLevel = engine.rootObjects().value(0);
     QQuickWindow *Item = qobject_cast<QQuickWindow *>(topLevel);
 
-    QObject::connect(&techpoint, SIGNAL(openPopUp(QVariant)),
-                     Item, SLOT(openPopUp(QVariant)));
+    QObject::connect(&techpoint, SIGNAL(openPopUp(QVariant)), Item, SLOT(openPopUp(QVariant)));
 
     //QQmlApplicationEngine engine;
     engine.load(QUrl(QStringLiteral("qrc:/View/MainView.qml")));

@@ -1,34 +1,34 @@
-#ifndef SCOPEVIEWMODEL_H
-#define SCOPEVIEWMODEL_H
+//#ifndef SCOPEVIEWMODEL_H
+//#define SCOPEVIEWMODEL_H
 
-#include <QObject>
-#include <QtCharts>
+//#include <QObject>
+//#include <QtCharts>
 
-#include "../Controller/controller.h"
-#include "customplotitem.h"
-#include "Model/Robot/TrajectoryPoint.h"
+//#include "../Controller/controller.h"
+//#include "customplotitem.h"
+//#include "Model/Robot/TrajectoryPoint.h"
 
-using namespace QtCharts;
+//using namespace QtCharts;
 
-class scopeviewmodel : public QObject
-{
-    Q_OBJECT
+//class scopeviewmodel : public QObject
+//{
+//    Q_OBJECT
 
-    Q_PROPERTY(int motorNum READ motorNum WRITE setMotorNum)
-public:
-    explicit scopeviewmodel(QObject *parent = nullptr);
+//    Q_PROPERTY(int motorNum READ motorNum WRITE setMotorNum)
+//public:
+//    explicit scopeviewmodel(QObject *parent = nullptr);
 
-signals:
+//signals:
 
-public slots:
+//public slots:
 
-    void run(QString mode,int teachpoint);
-    void setMotorNum(int type);
-    int motorNum();
+//    void run(QString mode,int teachpoint);
+//    void setMotorNum(int type);
+//    int motorNum();
 
-private:
-    Controller * controller;
-    int _motorNum = 0;
-};
+//private:
+//    Controller * controller;
+//    int _motorNum = 0;
+//};
 
-#endif // SCOPEVIEWMODEL_H
+//#endif // SCOPEVIEWMODEL_H
