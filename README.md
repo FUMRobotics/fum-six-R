@@ -1,14 +1,17 @@
-# SixR20
-cd toYourDirectory
-git clone https://github.com/mrrranjbar/SixR20GUI.git
-cd SixR20GUI/
-git checkout master1
-git config --global user.name "your name"
-git config --global user.email "youremail@gmail.com"
+# FUM 6R
 
-#if add new file
-git add -A
+ 6R robots are an indispensable hardware in modern day production. Benefiting from high articulation capabilities, they are widely used in factory plants and machinery. The number of DOF and versatility has made this class of robots highly desirable in manufacturing lines including welding processes, precision placement, and part positioning. Some features of the robot is as follows: 
 
-git commit -a  -m "your comment"
-git pull origin master1
-git push origin master1
+
+- Six DOF
+
+- Max Payload: 20 Kg
+
+- Max Cartesian Speed: 3 m/s (selected axis)
+
+- Repeatability –best case: ±0.015mm
+
+- Open control architecture for allowing research applications
+- Applications: Pick and Place, Packaging, Welding
+
+[![Watch the video]()](https://www.fumrobotics.ir/_nuxt/videos/6rBackground.6b8fdab.mp4)
