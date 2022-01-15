@@ -14,4 +14,4 @@
 - Open control architecture for allowing research applications
 - Applications: Pick and Place, Packaging, Welding
 
-[![Watch the video]()](https://www.fumrobotics.ir/_nuxt/videos/6rBackground.6b8fdab.mp4)
+[![Watch the video](https://s4.uupload.ir/files/6r_thumbnail_kre6.png)](https://www.fumrobotics.ir/_nuxt/videos/6rBackground.6b8fdab.mp4)
